@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:scrollbars="vertical">
+
+        <EditText
+            android:id="@+id/txtFileContents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/save"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btnOpen"
+                android:layout_width="172dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/open"
+                android:text="Open" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/speak"
+                android:text="Speak" />
+
+            <Button
+                android:id="@+id/btnRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/record"
+                android:text="Record" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnCommand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/command"
+                android:text="Command" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/clear"
+                android:text="Clear Text" />
+        </TableRow>
+
+        <TableRow android:layout_height="66dp">
+
+            <Button
+                android:id="@+id/btnHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/help"
+                android:text="Help" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/about"
+                android:text="About" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
